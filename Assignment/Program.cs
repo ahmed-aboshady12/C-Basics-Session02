@@ -62,14 +62,20 @@ namespace Assignment
             #endregion
             #region Q08
             //Q08.Given string yearText = "2023";, convert it using int.Parse().Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
-            string yearText = "2023";
-            int.Parse(yearText);
-            string badText = "abc";
-            bool num = int.TryParse(badText, out int result);
-            if (num == false)
-            {
-                Console.WriteLine("Invalid number");
-            }
+            //string yearText = "2023";
+            //int.Parse(yearText);
+            //string badText = "abc";
+            //bool num = int.TryParse(badText, out int result);
+            //if (num == false)
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
+            #endregion
+            #region
+            //Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()to prove it's now a string.
+            int pages = 464;
+            string page = pages.ToString();
+            Console.WriteLine(pages.GetType());
             #endregion
         }
 
