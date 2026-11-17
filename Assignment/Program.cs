@@ -85,19 +85,32 @@ namespace Assignment
             #endregion
             #region Q11
             //Q11. Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
-            int? year = null;
-            Console.WriteLine(year);
-            year = 2023;
-            Console.WriteLine(year);
+            //int? year = null;
+            //Console.WriteLine(year);
+            //year = 2023;
+            //Console.WriteLine(year);
             #endregion
             #region Q12
             //Q12.Declare a string? reviewer = null;. Print whether it is null.
-            string? reviewer = null;
-            if (reviewer == null) 
-            {
-                Console.WriteLine("true");
-            }
+            //string? reviewer = null;
+            //if (reviewer == null) 
+            //{
+            //    Console.WriteLine("true");
+            //}
             #endregion
+            #region Q13
+            //Q12.Declare a string? reviewer = null;. Print whether it is null.
+            //Book ? book = null;
+            //Console.WriteLine(book?.Title);
+            #endregion
+            #region Q14
+            //Q14.Using title from the previous question, use ?? to print "Untitled" if title is null.Then use ??= to assign title the value "Untitled" only if it's still null.
+            string? title = null;
+            Console.WriteLine(title ?? "Untitled");
+            title ??= "Untitled";
+            Console.WriteLine(title);
+            #endregion
+
         }
 
     }
