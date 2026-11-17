@@ -90,6 +90,14 @@ namespace Assignment
             year = 2023;
             Console.WriteLine(year);
             #endregion
+            #region Q12
+            //Q12.Declare a string? reviewer = null;. Print whether it is null.
+            string? reviewer = null;
+            if (reviewer == null) 
+            {
+                Console.WriteLine("true");
+            }
+            #endregion
         }
 
     }
