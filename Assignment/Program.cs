@@ -28,20 +28,25 @@ namespace Assignment
             #endregion
             #region Q04
             //Q04.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide byzero", and then prints "Done" in a finally block.
-            try
-            {
-                int x = 10;
-                int y = 0;
-                int result = x / y;
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Cannot divide byzero");
-            }
-            finally 
-            {
-                Console.WriteLine("Done");
-            }
+            //try
+            //{
+            //    int x = 10;
+            //    int y = 0;
+            //    int result = x / y;
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("Cannot divide byzero");
+            //}
+            //finally 
+            //{
+            //    Console.WriteLine("Done");
+            //}
+            #endregion
+            #region Q05
+            //Q05.Declare an int pages = 300; then store it in a double variable without using a cast.
+            int pages = 300;
+            double num = pages;
             #endregion
         }
 
