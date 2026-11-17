@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
+using System.Drawing;
 using System.Numerics;
+using System.Runtime.Intrinsics.X86;
 using System.Timers;
 
 namespace Assignment
@@ -55,10 +57,21 @@ namespace Assignment
             #endregion
             #region Q07
             //Q07.Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int num = Convert.ToInt32(pagesText);
+            //string pagesText = "464";
+            //int num = Convert.ToInt32(pagesText);
+            #endregion
+            #region Q08
+            //Q08.Given string yearText = "2023";, convert it using int.Parse().Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
+            string yearText = "2023";
+            int.Parse(yearText);
+            string badText = "abc";
+            bool num = int.TryParse(badText, out int result);
+            if (num == false)
+            {
+                Console.WriteLine("Invalid number");
+            }
             #endregion
         }
 
-}
+    }
 }
