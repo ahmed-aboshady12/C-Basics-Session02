@@ -71,17 +71,24 @@ namespace Assignment
             //    Console.WriteLine("Invalid number");
             //}
             #endregion
-            #region
+            #region Q09
             //Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()to prove it's now a string.
             //int pages = 464;
             //string page = pages.ToString();
             //Console.WriteLine(pages.GetType());
             #endregion
-            #region
+            #region Q10
             //Q10. Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
-            int copies = 100;
-            object obj = copies;
-            int num = (int)obj;
+            //int copies = 100;
+            //object obj = copies;
+            //int num = (int)obj;
+            #endregion
+            #region Q11
+            //Q11. Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+            int? year = null;
+            Console.WriteLine(year);
+            year = 2023;
+            Console.WriteLine(year);
             #endregion
         }
 
