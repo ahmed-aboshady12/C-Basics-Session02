@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.ComponentModel;
+using System.Numerics;
 using System.Timers;
 
 namespace Assignment
@@ -23,7 +24,24 @@ namespace Assignment
             #region Q03
             //Q03.Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.int pages = "464";
             //Compile-time Error
-            int pages = 464;
+            //int pages = 464;
+            #endregion
+            #region Q04
+            //Q04.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide byzero", and then prints "Done" in a finally block.
+            try
+            {
+                int x = 10;
+                int y = 0;
+                int result = x / y;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide byzero");
+            }
+            finally 
+            {
+                Console.WriteLine("Done");
+            }
             #endregion
         }
 
